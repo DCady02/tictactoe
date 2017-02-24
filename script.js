@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 //Variables
 
-	var turn = X;
+	var turn = O;
 	var board = [blank, blank, blank,
 				 blank, blank, blank,
 				 blank, blank, blank];
@@ -23,6 +23,7 @@ $(document).ready(function() {
  			if (board[digit] === blank) {
  				board[digit] = turn;
  				$(board[digit]).html(turn.toUpperCase());
+ 				$(event.target).html(turn);
  				if (turn === X) {
  					turn = O;
  				} else if (turn === O) {
@@ -70,7 +71,7 @@ $(document).ready(function() {
  			} else if (board[3] === O && board[4] === O && board[5] === O)  {
  				win("X");
  			} else if (board[6] === O && board [7] === O && board[8] === O) {
- 				win("X")
+ 				win("X");
  			} else if (board[0] === O && board[3] === O && board[6] === O)  {
  				win("X");
  			} else if (board[1] === O && board[4] === O && board[7] === O)  {
