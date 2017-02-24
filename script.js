@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 //Constants
-	var game = true;
+	var game = true; //for future enhancements
 	var X = 'X';
 	var O = 'O';
 	var blank = '';
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
  			$(event.target).html(turn);
 
- 		}); 
+ 		});
 
  	}
 
