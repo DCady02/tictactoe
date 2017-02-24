@@ -31,7 +31,7 @@ $(document).ready(function() {
  				}
 
  			} else {
- 				alert("That box has already been clicked on!")
+ 				alert("That box has already been clicked on!");
  			}
 
  			$(event.target).html(turn);
